@@ -6,6 +6,7 @@ Es una pequeña WepApp escrita en PHP para acortar enlaces.
 * Modificar htaccess.example ( si es necesario ) y renombrarlo .htaccess
 * Activar y configurar el modulo mod_rewrite de apache.
 * Importar la base de datos xoot.sql
+
 # Bibliotecas 
 * http://htmlpurifier.org/ 
 * https://j4mie.github.io/idiormandparis/
