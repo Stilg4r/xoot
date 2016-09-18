@@ -1,0 +1,18 @@
+<?php
+$routes=[
+	'/^GET\/$/i'=>[
+		'controller'=>DEFAULT_CONTROLLER,
+		'action'=>DEFAULT_ACTION,
+		'vars'=>[]
+	],
+	'/^POST\/urls$/i'=>[
+		'controller'=>'Urls',
+		'action'=>'create',
+		'vars'=>[]
+	],
+	'/^GET\/\w+$/'=>[
+		'controller'=>'Home',
+		'action'=>'short',
+		'vars'=>[1]
+	],
+];

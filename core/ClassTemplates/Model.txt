@@ -1,0 +1,4 @@
+<?php
+class #ClassName# extends CustomModel{
+	public static $_table = '#ModelName#';
+}

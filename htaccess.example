@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /
+# En el caso de instalalar al app en directorio que no sea la raiz
+# RewriteBase /dirinstall/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(fonts|images|img|css|js|robots\.txt)
+RewriteRule ^(.*)$ /index.php?url=$1&%{QUERY_STRING} [NC,L]
+# En el caso de instalalar al app en directorio que no sea la raiz
+# RewriteRule ^(.*)$ /dirinstall/index.php?url=$1&%{QUERY_STRING} [NC,L]
+
+# Importante #
+# Recordad eleminar todas las lineas que comiezan con # 

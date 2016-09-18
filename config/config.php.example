@@ -1,0 +1,20 @@
+<?php
+define ('DEBUG', false);	# modo debug 
+define ('DOMAIN', '');		# dominio del donde donde estara la app 
+define ('PATH', '');		# nombre del directorio donde esta la app, dejar en blanco si esta en la raiz
+
+define('SECRETKEY','');		# Synchronizer Token Patternx, no importante 
+
+define ('ADAPTER','');		# tipo de adaptador ver  https://idiorm.readthedocs.org/en/latest/configuration.html#database-authentication-details
+define ('HOST',''); 		# host de la base de datos 
+define ('DBNAME','');		# nombre de la base de datos 
+define ('USER', '');		# usuario 
+define ('PASS', '');		# contraceña
+
+define('DEFAULT_CONTROLLER', 'Home');				# no modificar
+	
+define('DEFAULT_ACTION', 'index');					# no modificar
+
+define('DEFAULT_TEMPLATE', 'commons/template'); 	# no modificar
+
+define('ERROR_PAHT', ROOT.DS.'tmp'.DS.'error.log');	# no modificar
